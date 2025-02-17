@@ -15,11 +15,17 @@ Este repositório centraliza a documentação e organização dos microserviços
 ## 🌐 Arquitetura
 O sistema segue uma abordagem baseada em microserviços, separados por domínio para garantir manutenção simplificada e escalabilidade. Cada serviço pode ser desenvolvido, implantado e escalado independentemente.
 
+### API Gateway
+A API Gateway foi implementada utilizando **Spring Cloud Gateway**, servindo como ponto único de entrada para os microserviços. Ela gerencia o roteamento das requisições, autenticação, e balanceamento de carga, garantindo segurança e eficiência na comunicação entre os serviços.
+
+🔗 Repositório: [API-Gateway](https://github.com/Cavasini/API-Gateway)
+
+
 ### Microserviços
 | Microserviço | Repositório |
 |--------------|-------------|
 | 🛒 **Carrinho de Compras** | [Cart-Microservice](https://github.com/Cavasini/Cart-Microsservice) |
-| 👥 **Autenticação e Usuários** | _Em breve_ |
+| 👥 **Autenticação e Usuários** | [Authentication-Service](https://github.com/Cavasini/Authentication-Service) |
 | 🛍️ **Gerenciamento de Produtos** | _Em breve_ |
 | 💳 **Pagamentos** | _Em breve_ |
 | 🚳 **Pedidos e Entregas** | _Em breve_ |
